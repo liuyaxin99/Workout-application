@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:text="Running"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/musicButton"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/musicButton"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/music" />
+
+    <Button
+        android:id="@+id/action_chrono"
+        android:layout_width="360dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/cardview_dark_background"
+        android:text="GO"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:title="@string/ChronometerLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="always" />
+
+    <Button
+        android:id="@+id/weight"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/cardview_dark_background"
+        android:text="Record your weight"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculator"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/cardview_dark_background"
+        android:text="Calculate your BMI and Heart Rate"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/datanext"
+        android:layout_width="69dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/cardview_dark_background"
+        android:text="Video"
+        android:textColor="@color/white"
+        android:transitionName="testAnimation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/weightdb"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="84dp"
+        android:background="@color/cardview_dark_background"
+        android:text="Record Weight to Database"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

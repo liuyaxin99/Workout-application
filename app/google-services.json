@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1049198453724",
+    "firebase_url": "https://fitbuffappnew-1f47f.firebaseio.com",
+    "project_id": "fitbuffappnew-1f47f",
+    "storage_bucket": "fitbuffappnew-1f47f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049198453724:android:29aa4db86608bddf",
+        "android_client_info": {
+          "package_name": "com.example.fitbuff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049198453724-7thkbq0f67j5h6p8djv0qkffkvjko13m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWf5OCdQ_h6W1GFU3C12MxT7g2ihN73dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049198453724-7thkbq0f67j5h6p8djv0qkffkvjko13m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

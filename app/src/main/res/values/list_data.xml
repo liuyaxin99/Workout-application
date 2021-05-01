@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Songs">
+        <item>music1</item>
+        <item>music2</item>
+        <item>music3</item>
+        <item>music4</item>
+        <item>music5</item>
+        <item>music6</item>
+        <item>music7</item>
+        <item>music8</item>
+        <item>music9</item>
+        <item>music10</item>
+    </string-array>
+</resources>

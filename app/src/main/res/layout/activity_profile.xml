@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile"
+    android:background="@color/black">
+
+    <EditText
+        android:id="@+id/enterDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/black"
+            android:elevation="4dp"
+            android:hint="@string/ageText"
+            android:padding="12dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/heightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/height"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <SeekBar
+            android:id="@+id/heightSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="fill_horizontal"
+            android:max="96"
+            android:progress="48" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/weightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/weight"
+            android:textColorHint="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"/>
+
+        <SeekBar
+            android:id="@+id/weightSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="fill_horizontal"
+            android:max="400"
+            android:progress="200" />
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/workoutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:elevation="4dp"
+            android:hint="@string/workoutText"
+            android:padding="12dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColorHint="@color/white"
+            android:background="@color/black"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/zeroButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="0  "
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/oneToTwoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-2  "
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/threeToFiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3-5  "
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/sixToSevenButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6-7  "
+                android:textColor="@color/white"/>
+
+        </RadioGroup>
+
+
+
+    <Switch
+        android:id="@+id/genderSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_row="1"
+        android:hint="Gender  "
+        android:padding="12dp"
+        android:showText="true"
+        android:switchPadding="15sp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textOff="♀"
+        android:textOn="♂"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:id="@+id/addEntryButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Entry"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="@color/black"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/viewEntriesButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Entries"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/black"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/healthyEntriesButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Healthy Entries"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="@color/black"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bmrButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:text="Find Daily Caloric Intake"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</android.widget.LinearLayout>
